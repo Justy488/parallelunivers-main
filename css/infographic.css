@@ -9,12 +9,13 @@
 .info-graphic {
   border-radius: 0;
   margin: 60px auto 80px auto;
-  /* background-image: url("../img/universemergency.svg");
+  /* Dette forneden er ikke en god ide, for så kan man ikke klikke på noget, så det bare et billede
+  background-image: url("../img/universemergency.svg");
   background-size: cover;
   background-position: center;
-
   aspect-ratio: 1; */
 }
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
@@ -54,9 +55,21 @@
   cursor: pointer;
 }
 
-/* Highlight/glow effekt */
-.highlight {
-  filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 255, 0.8));
+/* Farvede glows for specifikke elementer */
+#ufo.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 255, 0.8)); /* blå/turkis */
+}
+
+#planet.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(255, 215, 0, 0.9)); /* gul/guld */
+}
+
+#stjerne.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgba(255, 255, 255, 1)); /* hvid stjerneglød */
+}
+
+#alien.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 0, 0.8)); /* grøn glød */
 }
 
 /* Retningsspecifikke bevægelser */
@@ -73,37 +86,4 @@
   transform: scale(1.1) translate(-8px, 0);
 } /* Vest */
 
-/* 
-
-
-/*                til effect af knapper på svg                 */
-
-/* #ufo { */
-transition: all 0.3s ease; /* Glat animation */
-
-cursor: pointer;
-
-/*      Grundeffekt -  Highlight + glow + lidt skalering      */
-/* .highlight { */
-filter: brightness(130%) drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
-transform: scale(1.1);
-
-/* .clickable { */
-transition: all 0.3s ease;
-cursor: pointer;
-
-/* Retningsspecifikke effekter */
-/* 
-.highlight.ne {
-  transform: scale(1.1) translate(5px, -5px);
-} /* Nordøst */
-
-/* .highlight.nw { 
-  /* transform: scale(1.1) translate(-5px, -5px); */
-/* Nordvest */
-/* .highlight.e { */
-/* transform: scale(1.1) translate(8px, 0); */
-/* Øst */
-/* .highlight.w { */
-/* transform: scale(1.1) translate(-8px, 0); */
-/* Vest*/
+/* se evt på HTML hvis du gerne vil se skalering retninger på de forskellige id */
