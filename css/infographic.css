@@ -45,3 +45,34 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+/*                til effect af knapper på svg                 */
+
+/* Highlight til knap */
+/* Standard stil */
+
+/* #ufo {
+  transition: filter 0.3s ease;
+} */
+
+/* Highlight-effekten */
+/* .highlight {
+  filter: brightness(120%);
+} */
+/* 
+#ufo:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+} */
+
+#ufo {
+  transition: all 0.3s ease; /* Glat animation */
+
+  cursor: pointer;
+}
+
+/* Highlight + glow + lidt skalering */
+.highlight {
+  filter: brightness(130%) drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
+  transform: scale(1.1);
+}
