@@ -46,33 +46,64 @@
   background-color: var(--color-infobox-2-bg);
 }
 
+/* ========== SVG interaktion og effekter ========== */
+
+/* Fælles overgang og klikbar styling */
+.clickable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Highlight/glow effekt */
+.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 255, 0.8));
+}
+
+/* Retningsspecifikke bevægelser */
+.highlight.ne {
+  transform: scale(1.1) translate(5px, -5px);
+} /* Nordøst */
+.highlight.nw {
+  transform: scale(1.1) translate(-5px, -5px);
+} /* Nordvest */
+.highlight.e {
+  transform: scale(1.1) translate(8px, 0);
+} /* Øst */
+.highlight.w {
+  transform: scale(1.1) translate(-8px, 0);
+} /* Vest */
+
+/* 
+
+
 /*                til effect af knapper på svg                 */
 
-/* Highlight til knap */
-/* Standard stil */
+/* #ufo { */
+transition: all 0.3s ease; /* Glat animation */
 
-/* #ufo {
-  transition: filter 0.3s ease;
-} */
+cursor: pointer;
 
-/* Highlight-effekten */
-/* .highlight {
-  filter: brightness(120%);
-} */
+/*      Grundeffekt -  Highlight + glow + lidt skalering      */
+/* .highlight { */
+filter: brightness(130%) drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
+transform: scale(1.1);
+
+/* .clickable { */
+transition: all 0.3s ease;
+cursor: pointer;
+
+/* Retningsspecifikke effekter */
 /* 
-#ufo:hover {
-  filter: brightness(120%);
-  cursor: pointer;
-} */
+.highlight.ne {
+  transform: scale(1.1) translate(5px, -5px);
+} /* Nordøst */
 
-#ufo {
-  transition: all 0.3s ease; /* Glat animation */
-
-  cursor: pointer;
-}
-
-/* Highlight + glow + lidt skalering */
-.highlight {
-  filter: brightness(130%) drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
-  transform: scale(1.1);
-}
+/* .highlight.nw { 
+  /* transform: scale(1.1) translate(-5px, -5px); */
+/* Nordvest */
+/* .highlight.e { */
+/* transform: scale(1.1) translate(8px, 0); */
+/* Øst */
+/* .highlight.w { */
+/* transform: scale(1.1) translate(-8px, 0); */
+/* Vest*/

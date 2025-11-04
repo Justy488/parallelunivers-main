@@ -6,11 +6,37 @@ function displayInfo() {
   console.log("test");
 }
 
-// infobox*/
-document.querySelector("#ufo").addEventListener("click", updateinfoboxname);
+// ========== GLOW / HIGHLIGHT EFFEKTER ==========
 
-function updateinfoboxname() {
-  console.log("updateinfoboxname");
+// Find alle grupper, som kan klikkes på
+const groups = document.querySelectorAll(".clickable");
+
+groups.forEach((group) => {
+  group.addEventListener("click", () => {
+    const direction = group.dataset.direction;
+
+    // Hvis elementet allerede er aktivt → fjern highlight (toggle off)
+    if (group.classList.contains("highlight")) {
+      group.classList.remove("highlight", "ne", "nw", "e", "w");
+      return;
+    }
+
+    // Fjern highlight fra alle andre
+    groups.forEach((g) =>
+      g.classList.remove("highlight", "ne", "nw", "e", "w")
+    );
+
+    // Tilføj highlight + retning til det valgte
+    group.classList.add("highlight", direction);
+  });
+});
+
+// ========== INFOBOX FUNKTIONER & TEKST ==========
+
+// UFO */
+document.querySelector("#ufo").addEventListener("click", updateinfoboxufo);
+function updateinfoboxufo() {
+  console.log("updateinfoboxufo");
   document.querySelector(".info-text h2").textContent = "UFO";
   document.querySelector(".info-text .placeholder").textContent = "";
   document.querySelector("#efficiency").innerHTML =
@@ -19,27 +45,8 @@ function updateinfoboxname() {
     "<h3>Underrubrik</h3><p></p>";
 }
 
-//                  Til ufo effect               */
-// Find elementet
-// const ufo = document.getElementById("ufo");
-
-// // Når du klikker på gruppen
-// ufo.addEventListener("click", () => {
-//   // Toggle highlight-klassen
-//   ufo.classList.toggle("highlight");
-// });
-
-// Find elementet  */
-const ufo = document.getElementById("ufo");
-
-ufo.addEventListener("click", () => {
-  ufo.classList.toggle("highlight");
-});
-
-// infobox*/;
-document.querySelector("#hotel").addEventListener("click", updateinfoboxhotel);
-
-function updateinfoboxhotel() {
+// HOTEL
+document.querySelector("#hotel").addEventListener("click", () => {
   console.log("updateinfoboxhotel");
   document.querySelector(".info-text h2").textContent = "Hotel";
   document.querySelector(".info-text .placeholder").textContent =
@@ -47,38 +54,25 @@ function updateinfoboxhotel() {
   document.querySelector("#efficiency").innerHTML =
     "<h3>Hvor kan du bo henne?</h3><p>Hvis du nu er endt i et parallelt univers, hvor kunne du så bo henne?</p>";
   document.querySelector("#requirement").innerHTML =
-    "<h3>Dette Kunne være dine muligheder, men vi fortrækker ...</h3><p> AirBNB, Et familie medlem som ikke er en seriemorder i dette univers. Eller det mest oplagte et Hotel</p>";
-}
-
-// Find elementet  */
-const hotel = document.getElementById("hotel");
-
-hotel.addEventListener("click", () => {
-  hotel.classList.toggle("highlight");
+    "<h3>Dette Kunne være dine muligheder, men vi fortrækker at sætte dig i et hotel </h3> <strong><h3>Du kunne vælge:  </h3></strong><p> - AirBNB </p> <p> - Et familie medlem som ikke er en seriemorder i dette univers.</p> <p> - Eller det mest oplagte et Hotel</p>";
 });
 
-// infobox*/;
-document
-  .querySelector("#pinkgirl")
-  .addEventListener("click", updateinfoboxpink);
-
-function updateinfoboxpink() {
+// PINK GIRL
+document.querySelector("#pinkgirl").addEventListener("click", () => {
   console.log("updateinfoboxpink");
   document.querySelector(".info-text h2").textContent = "Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
     "Oh Nej! Du har mødt eller set din dobbeltgænger, hvad gør du?";
   document.querySelector("#efficiency").innerHTML =
-    "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
+    "<h3> Info om Situationen </h3><p>Du har mødt din dobbeltgænger i et parallelt univers...</p><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
   document.querySelector("#requirement").innerHTML =
     "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
-}
 
-// infobox*/;
-document
-  .querySelector("#bluegirl")
-  .addEventListener("click", updateinfoboxblue);
+  ("<h3>Muligheder</h3><p>Overvej dine valg. Nysgerrighed kan være farlig...</p>");
+});
 
-function updateinfoboxblue() {
+// BLUE GIRL
+document.querySelector("#bluegirl").addEventListener("click", () => {
   console.log("updateinfoboxblue");
   document.querySelector(".info-text h2").textContent = "#2 Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
@@ -86,15 +80,11 @@ function updateinfoboxblue() {
   document.querySelector("#efficiency").innerHTML =
     "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
-}
+    "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder<p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p> <p>Klik på en anden pige for at se flere scenarier...</p>";
+});
 
-// infobox*/;
-document
-  .querySelector("#yellowgirl")
-  .addEventListener("click", updateinfoboxyellow);
-
-function updateinfoboxyellow() {
+// YELLOW GIRL
+document.querySelector("#yellowgirl").addEventListener("click", () => {
   console.log("updateinfoboxyellow");
   document.querySelector(".info-text h2").textContent = "#3 Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
@@ -102,15 +92,11 @@ function updateinfoboxyellow() {
   document.querySelector("#efficiency").innerHTML =
     "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
-}
+    "<h3> Muligheder </h3><p>Ved klik på en anden pige kan du se andre muligheder...</p>";
+});
 
-// infobox*/;
-document
-  .querySelector("#greengirl")
-  .addEventListener("click", updateinfoboxgreen);
-
-function updateinfoboxgreen() {
+// GREEN GIRL
+document.querySelector("#greengirl").addEventListener("click", () => {
   console.log("updateinfoboxgreen");
   document.querySelector(".info-text h2").textContent = "#4 Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
@@ -119,13 +105,11 @@ function updateinfoboxgreen() {
     "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
   document.querySelector("#requirement").innerHTML =
     "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
-}
+});
 
-// infobox*/;
-document.querySelector("#plane").addEventListener("click", updateinfoboxplane);
-
-function updateinfoboxplane() {
-  console.log("updateinfoboxgreen");
+// PLANE
+document.querySelector("#plane").addEventListener("click", () => {
+  console.log("updateinfoboxplane");
   document.querySelector(".info-text h2").textContent =
     "Du har trykket på pilen";
   document.querySelector(".info-text .placeholder").textContent =
@@ -134,4 +118,4 @@ function updateinfoboxplane() {
     "<h3> Info om Situationen </h3><p> Ved at klikke på dette link kan du blive sendt videre formularen, som hjælper os med at finde den rigtige løsning for dig i din Nødsituation. </p> <strong><p> Tryk her for at få mere at vide </p></strong>";
   document.querySelector("#requirement").innerHTML =
     "<h3> Muligheder </h3><p> </p><p>  </p>";
-}
+});
