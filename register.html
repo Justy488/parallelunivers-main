@@ -40,7 +40,39 @@
           <h2>Overskrift</h2>
           <p>Tekst</p>
         </article>
-        <form id="webform"></form>
+        <form id="webform">
+          <h3>Your Emergency</h3>
+          <label for="id-emergency">Nødsituation</label>
+          <select id="id-emergency" name="id-emergency">
+            <option value="">--Vælg en Nødsituation --</option>
+            <option value="valuta">Mangel på Valuta</option>
+            <option value="dobbeltgænger">Har mødt min Dobbeltgænger</option>
+            <option value="transport">Kan ikke tage normal transport</option>
+            <option value="aliens">Alien er normalt i dette univers!</option>
+            <option value="nyt hjem">Kan ikke finde et hotel at bo på!</option>
+          </select>
+          <label for="first_name">First name</label>
+          <input type="text" id="first_name" name="first_name" />
+          <p>Please enter a value</p>
+
+          <label for="last_name">Last name</label>
+          <input type="text" id="last_name" name="last_name" />
+          <p>Please enter a value</p>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <p>Please enter a value</p>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+          <p>Please enter a value</p>
+
+          <label for="terms">
+            <input type="checkbox" id="terms" name="accept_terms" value="yes" />
+            Accept terms
+          </label>
+          <button>Sign up</button>
+        </form>
       </section>
       <section id="form-summary">
         <h2>Summary</h2>
