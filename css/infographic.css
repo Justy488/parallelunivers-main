@@ -1,5 +1,5 @@
 #head-txt {
-  fill: rgb(54, 54, 54);
+  fill: rgb(247, 245, 245);
 }
 .info-graphic,
 .info-text {
@@ -55,21 +55,51 @@
   cursor: pointer;
 }
 
+#ufo,
+#hotel {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
 /* Farvede glows for specifikke elementer */
 #ufo.highlight {
   filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 255, 0.8)); /* blå/turkis */
+  scale: 1.1;
 }
 
-#planet.highlight {
-  filter: brightness(130%) drop-shadow(0 0 12px rgba(255, 215, 0, 0.9)); /* gul/guld */
+#plane.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(30, 27, 185, 0.9)); /* gul/guld */
+  scale: 1.1;
 }
 
-#stjerne.highlight {
-  filter: brightness(140%) drop-shadow(0 0 14px rgba(255, 255, 255, 1)); /* hvid stjerneglød */
+#hotel.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(240, 244, 223, 0.8)); /* grøn glød */
+  scale: 1.1;
 }
 
-#alien.highlight {
-  filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 0, 0.8)); /* grøn glød */
+#pinkgirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(231, 130, 214)); /* hvid glød */
+  scale: 1.1;
+}
+
+#bluegirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(101, 146, 241)); /* hvid glød */
+  scale: 1.1;
+}
+
+#yellowgirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(242, 255, 168)); /* hvid glød */
+  scale: 1.1;
+}
+
+#greengirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgba(151, 18, 122, 0.669)); /* hvid glød */
+  scale: 1.1;
+}
+
+#train.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(237, 163, 51)); /* hvid glød */
+  scale: 1.1;
 }
 
 /* Retningsspecifikke bevægelser */

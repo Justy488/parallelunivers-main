@@ -21,6 +21,9 @@ h2 {
   line-height: 1.25;
 }
 
+h1 {
+  size: 40ch;
+}
 p,
 li {
   text-wrap: pretty;
@@ -38,7 +41,7 @@ label {
 }
 
 input,
-button,
+form button,
 textarea,
 select {
   font: inherit;

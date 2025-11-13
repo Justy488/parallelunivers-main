@@ -78,7 +78,8 @@
   color: var(--color-text-inverted);
   text-decoration: none;
   width: max-content;
-  border-radius: var(--border-radius);
+  border-radius: 2em;
+  /* border-radius: var(--border-radius); */
 }
 .news_card .cta_btn {
   background-color: var(--color-cta-newscard-bg);
