@@ -250,10 +250,12 @@ const termsOutput = document.querySelector("#terms_output");
 
 function cancelPopup(event) {
   event.preventDefault();
+  console.log("her er jeg");
   form.querySelector(":user-invalid").focus();
 }
 
 function handleSubmit(event) {
+  console.log("handlesubmit");
   event.preventDefault();
 
   // 1. Saml værdierne fra formularen
@@ -277,6 +279,7 @@ function handleSubmit(event) {
 }
 
 if (form) {
+  console.log("form");
   form.addEventListener("invalid", cancelPopup, true);
   form.addEventListener("submit", handleSubmit);
 }
