@@ -1,5 +1,5 @@
 #head-txt {
-  fill: rgb(54, 54, 54);
+  fill: rgb(247, 245, 245);
 }
 .info-graphic,
 .info-text {
@@ -9,12 +9,13 @@
 .info-graphic {
   border-radius: 0;
   margin: 60px auto 80px auto;
-  /* background-image: url("../img/universemergency.svg");
+  /* Dette forneden er ikke en god ide, for så kan man ikke klikke på noget, så det bare et billede
+  background-image: url("../img/universemergency.svg");
   background-size: cover;
   background-position: center;
-
   aspect-ratio: 1; */
 }
+
 .info-text h2 {
   line-height: 3rem;
   text-align: center;
@@ -45,3 +46,74 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+/* ========== SVG interaktion og effekter ========== */
+
+/* Fælles overgang og klikbar styling */
+.clickable {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#ufo,
+#hotel {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+}
+
+/* Farvede glows for specifikke elementer */
+#ufo.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(0, 255, 255, 0.8)); /* blå/turkis */
+  scale: 1.1;
+}
+
+#plane.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(30, 27, 185, 0.9)); /* gul/guld */
+  scale: 1.1;
+}
+
+#hotel.highlight {
+  filter: brightness(130%) drop-shadow(0 0 12px rgba(240, 244, 223, 0.8)); /* grøn glød */
+  scale: 1.1;
+}
+
+#pinkgirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(231, 130, 214)); /* hvid glød */
+  scale: 1.1;
+}
+
+#bluegirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(101, 146, 241)); /* hvid glød */
+  scale: 1.1;
+}
+
+#yellowgirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(242, 255, 168)); /* hvid glød */
+  scale: 1.1;
+}
+
+#greengirl.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgba(151, 18, 122, 0.669)); /* hvid glød */
+  scale: 1.1;
+}
+
+#train.highlight {
+  filter: brightness(140%) drop-shadow(0 0 14px rgb(237, 163, 51)); /* hvid glød */
+  scale: 1.1;
+}
+
+/* Retningsspecifikke bevægelser */
+.highlight.ne {
+  transform: scale(1.1) translate(5px, -5px);
+} /* Nordøst */
+.highlight.nw {
+  transform: scale(1.1) translate(-5px, -5px);
+} /* Nordvest */
+.highlight.e {
+  transform: scale(1.1) translate(8px, 0);
+} /* Øst */
+.highlight.w {
+  transform: scale(1.1) translate(-8px, 0);
+} /* Vest */
+
+/* se evt på HTML hvis du gerne vil se skalering retninger på de forskellige id */
