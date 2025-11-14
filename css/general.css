@@ -9,7 +9,6 @@ header {
 }
 
 #main-disclamer {
-  height: 225px;
   background-color: var(--color-head-bg);
   display: flex;
   justify-content: flex-start;
