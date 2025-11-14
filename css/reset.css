@@ -14,6 +14,11 @@
 
 /* Popover */
 [popover] {
+  padding: 1rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  border: 0;
   opacity: 0;
   scale: 1.1;
   transition: 400ms;
@@ -107,6 +112,8 @@ html {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
 }
+
+/* reset styling */
 
 h1,
 h2 {
