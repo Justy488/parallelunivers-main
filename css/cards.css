@@ -86,7 +86,8 @@
 }
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
-  color: var(--color-text);
+  /* color: var(--color-text); denne er udkommenteret, så den ikke gælder alle elementer for nu */
+  color: aliceblue;
 }
 .cta_btn:after {
   content: "\2192";

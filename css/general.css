@@ -155,12 +155,17 @@ input {
 }
 
 button {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #000;
   color: #fff;
   border-radius: 6px;
   padding: 0.25rlh 0.5rlh;
   cursor: pointer;
+}
+
+.pop_knap {
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 131, 127);
 }
 
 /* color on buttons - instruktion page */
