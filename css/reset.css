@@ -30,7 +30,7 @@
 
 [popover]:popover-open {
   opacity: 1;
-
+  border-radius: 2em;
   scale: none;
   transition: opacity 300ms ease-in-out,
     scale 1500ms

@@ -116,112 +116,143 @@
           </div>
 
           <div class="form-group">
-            <h3>Your Emergency</h3>
+            <h3>Information on Your Emergency</h3>
+
+            <!-- SKRIV MERE HER -->
+            <label for="b">Besked</label>
+            <textarea name="message" id="meassage-error"></textarea>
+
+            <!-- SKRIV MERE HER -->
+            <label for="a">Input Document</label>
+
+            <input type="file" accept="image/*, text/*" name="file" />
+
             <label for="id-emergency">Nødsituation</label>
-            <select id="id-emergency" name="id-emergency">
+            <select id="id-emergency" name="id-emergency" required>
               <option value="">Vælg en Nødsituation</option>
-              <option value="valuta">💵Mangel på Valuta</option>
+              <option value="valuta">💵 Mangel på Valuta</option>
               <option value="dobbeltgænger">
-                🤝Har mødt min Dobbeltgænger
+                🤝 Har mødt min Dobbeltgænger
               </option>
-              <option value="aliens">
+              <option value="dobbeltgænger-farlig">
                 🔪 Min dobbeltgænger prøver at dræbe mig!
               </option>
-              <option value="aliens">
-                👯Min dobbeltgænger vil erstatte mig i mit univers
+              <option value="erstatning">
+                👯 Min dobbeltgænger vil erstatte mig i mit univers
               </option>
               <option value="transport">
-                🚂Kan ikke tage normal transport
+                🚂 Kan ikke tage normal transport
               </option>
-              <option value="aliens">
-                👽Aliens er normalt i dette univers!
+              <option value="aliens-normal">
+                👽 Aliens er normalt i dette univers!
               </option>
-              <option value="nyt hjem">
+              <option value="nyt-hjem">
                 🏨 Kan ikke finde et hotel at bo på!
               </option>
-              <option value="aliens">
-                👽Min UFO-Uberdriver er en Alien, det gør mig utilpas!
+              <option value="aliens-uber">
+                👽 Min UFO-Uberdriver er en Alien, det gør mig utilpas!
               </option>
-              <option value="aliens">🛸Jeg har aldrig kørt med UFO før!</option>
-              <option value="aliens">🤧Jeg bliver nemt portal-syg</option>
+              <option value="ufo-ny">
+                🛸 Jeg har aldrig kørt med UFO før!
+              </option>
+              <option value="portal-syg">🤧 Jeg bliver nemt portal-syg</option>
             </select>
+            <!-- SKRIV MERE HER -->
+            <label for="c">More</label>
+            <textarea name="More" id="c"></textarea>
+
             <fieldset>
-              <legend>Favourite Languages</legend>
-              <div>
-                <label for="html">
-                  <input
-                    type="radio"
-                    value="HTML"
-                    name="language"
-                    id="html"
-                    aria-describedby="lang-msg"
-                    required
-                  />
-                  HTML
-                </label>
-                <label for="css">
-                  <input
-                    type="radio"
-                    value="CSS"
-                    name="language"
-                    id="css"
-                    aria-describedby="lang-msg"
-                  />
-                  CSS
-                </label>
-                <label for="javascript">
-                  <input
-                    type="radio"
-                    value="JavaScript"
-                    name="language"
-                    id="javascript"
-                    aria-describedby="lang-msg"
-                  />
-                  JavaScript
-                </label>
-              </div>
+              <legend>Are you in a wrong parallel universe?</legend>
+
+              <label for="yes">
+                <input
+                  type="radio"
+                  id="yes"
+                  name="areyou"
+                  value="Yes"
+                  aria-describedby="areyou-error"
+                  required
+                />
+                Yes
+              </label>
+
+              <label for="no">
+                <input type="radio" id="no" name="areyou" value="No" />
+                No
+              </label>
+
+              <label for="maybe">
+                <input type="radio" id="maybe" name="areyou" value="Maybe" />
+                Maybe
+              </label>
+
+              <label for="idk">
+                <input
+                  type="radio"
+                  id="idk"
+                  name="areyou"
+                  value="I don't know"
+                />
+                I don't know
+              </label>
             </fieldset>
-            <p id="lang-msg" class="error-message">Please select a language</p>
+            <p id="areyou-error" class="error-message">
+              Please select an option
+            </p>
           </div>
 
-          <!-- <fieldset>
-              <legend>To get back home do you prefer to travel with?</legend>
-              <div>
-                <label for="html">
-                  <input
-                    type="radio"
-                    value="HTML"
-                    name="language"
-                    id="html"
-                    aria-describedby="lang-msg"
-                    required
-                  />
-                  I would like to stay here!
-                </label>
-                <label for="css">
-                  <input
-                    type="radio"
-                    value="CSS"
-                    name="language"
-                    id="css"
-                    aria-describedby="lang-msg"
-                  />
-                  Portal jumping
-                </label>
-                <label for="javascript">
-                  <input
-                    type="radio"
-                    value="JavaScript"
-                    name="language"
-                    id="javascript"
-                    aria-describedby="lang-msg"
-                  />
-                  Unidentified Flying Object (UFO)
-                </label>
-              </div>
-            </fieldset>
-            <p id="lang-msg" class="error-message">Please select a language</p>
-          </div> -->
+          <label for="phone">Phone number or Universal cell number:</label>
+          <div>
+            <select name="country_code">
+              <option value="+45">🇩🇰 +45</option>
+              <option value="+47">🇳🇴 +47 Norge</option>
+              <option value="+46">🇸🇪 +46 Sverige</option>
+              <option value="+44">🇬🇧 +44 England</option>
+            </select>
+            <!-- space -->
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <label for="portal_world">Portal travel number:</label>
+          <div>
+            <input type="tel" id="portal_world" name="portal_world" />
+            <!-- space -->
+            <select name="country_code">
+              <option value="#045">🇬🇧 🪐#045</option>
+              <option value="#60">🇬🇧 🪐#606</option>
+              <option value="#365">🇬🇧🪐#365</option>
+              <option value="#808">🇬🇧 🪐#808</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>To get back home do you prefer to travel with?</legend>
+
+            <label>
+              <input
+                type="radio"
+                value="stay"
+                name="language"
+                aria-describedby="language-error"
+                required
+              />
+              I would like to stay here!
+            </label>
+
+            <label>
+              <input type="radio" value="portal" name="language" />
+              Portal jumping
+            </label>
+
+            <label>
+              <input type="radio" value="ufo" name="language" />
+              Unidentified Flying Object (UFO)
+            </label>
+          </fieldset>
+
+          <p id="language-error" class="error-message">
+            Please select a travel method
+          </p>
 
           <div class="form-group">
             <label for="accept_terms">
@@ -241,6 +272,7 @@
           <button>Sign up</button>
         </form>
       </section>
+
       <section class="output">
         <div class="output">
           <h2>Opsamling</h2>
@@ -248,7 +280,21 @@
           <p>Last name: <span id="last_name_output"></span></p>
           <p>Email: <span id="email_output"></span></p>
           <p>Password: <span id="password_output"></span></p>
-          <p>Favourite Languages: <span id="lang_output"></span></p>
+          <p>Message: <span id="message-error"></span></p>
+          <p>Your Emergency: <span id="lang_output"></span></p>
+          <p>
+            Are you in a wrong parallel universe?:
+            <span id="lang_output"></span>
+          </p>
+          <p>
+            Phone number or Universal cell number:
+            <span id="lang_output"></span>
+          </p>
+          <p>Portal travel number: <span id="lang_output"></span></p>
+          <p>
+            To get back home do you prefer to travel with?:
+            <span id="lang_output"></span>
+          </p>
           <p>Terms accepted: <span id="terms_output"></span></p>
         </div>
       </section>

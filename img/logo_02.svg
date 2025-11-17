@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385.61 39.96">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.13em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-5 {
+        letter-spacing: .03em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        fill: #fff;
+        font-family: brillant, brillant;
+        font-size: 26px;
+      }
+
+      .cls-8 {
+        letter-spacing: -.17em;
+      }
+    </style>
+  </defs>
+  <g id="logo">
+    <text class="cls-7" transform="translate(0 21.84)"><tspan class="cls-8" x="0" y="0">W</tspan><tspan class="cls-6" x="35.52" y="0">r</tspan><tspan class="cls-1" x="53.3" y="0">on</tspan><tspan x="95.19" y="0">g /</tspan><tspan class="cls-1" x="137.96" y="0">U</tspan><tspan class="cls-3" x="160.99" y="0">n</tspan><tspan class="cls-4" x="182.23" y="0">i</tspan><tspan class="cls-2" x="187.82" y="0">v</tspan><tspan class="cls-5" x="208.57" y="0">er</tspan><tspan x="247.34" y="0">s</tspan></text>
+  </g>
+</svg>
