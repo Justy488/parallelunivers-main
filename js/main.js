@@ -245,7 +245,12 @@ const firstNameOutput = document.querySelector("#first_name_output");
 const lastNameOutput = document.querySelector("#last_name_output");
 const emailOutput = document.querySelector("#email_output");
 const passwordOutput = document.querySelector("#password_output");
-const langOutput = document.querySelector("#lang_output");
+const emergencyOutput = document.querySelector("#emergency_output");
+const phoneOutput = document.querySelector("#phone_output");
+const portal_worldOutput = document.querySelector("#portal_world_Output");
+const third_output = document.querySelector("#third_output");
+const fourth_output = document.querySelector("#fourth_output");
+const messageOutput = document.querySelector("#message_output");
 const termsOutput = document.querySelector("#terms_output");
 
 function cancelPopup(event) {
@@ -266,13 +271,25 @@ function handleSubmit(event) {
   const password = formData.get("password");
   const lang = formData.getAll("language").join(", ");
   const terms = formData.get("accept_terms");
+  const emergencytype = formData.get("id-emergency");
+  const phonetype = formData.get("phone");
+  const portal_worldtype = formData.get("portal_world");
+  const thirdtype = formData.get("areyou");
+  const fourthtype = formData.get("language");
+  const messagetype = formData.get("message");
 
   // 2. Vis værdierne i de rigtige output-felter
+  // Output
   firstNameOutput.textContent = firstName;
   lastNameOutput.textContent = lastName;
   emailOutput.textContent = email;
   passwordOutput.textContent = password;
-  langOutput.textContent = lang;
+  emergencyOutput.textContent = emergencytype;
+  phoneOutput.textContent = phonetype;
+  portal_worldOutput.textContent = portal_worldtype;
+  third_output.textContent = thirdtype;
+  fourth_output.textContent = fourthtype;
+  messageOutput.textContent = messagetype;
   termsOutput.textContent = terms;
 
   form.reset();

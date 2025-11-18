@@ -2632,8 +2632,8 @@
             <h3>Information on Your Emergency</h3>
 
             <!-- SKRIV MERE HER -->
-            <label for="b">Besked</label>
-            <textarea name="message" id="meassage-error"></textarea>
+            <label for="b">Message</label>
+            <textarea name="message" id="meassage"></textarea>
 
             <!-- SKRIV MERE HER -->
             <label for="a">Input Document</label>
@@ -2672,7 +2672,7 @@
             </select>
             <!-- SKRIV MERE HER -->
             <label for="c">More</label>
-            <textarea name="More" id="c"></textarea>
+            <textarea name="more" id="c"></textarea>
 
             <fieldset>
               <legend>Are you in a wrong parallel universe?</legend>
@@ -2714,7 +2714,7 @@
             </p>
           </div>
 
-          <label for="phone">Phone number or Universal cell number:</label>
+          <label for="first">Phone number or Universal cell number:</label>
           <div>
             <select name="country_code">
               <option value="+45">🇩🇰 +45</option>
@@ -2763,7 +2763,7 @@
             </label>
           </fieldset>
 
-          <p id="language-error" class="error-message">
+          <p id="travel_method" class="error-message">
             Please select a travel method
           </p>
 
@@ -2779,7 +2779,7 @@
               />
               Accept terms
             </label>
-            <p class="error-message" id="terms-error">Please tick the box</p>
+            <p class="error-message" id="tick_box">Please tick the box</p>
           </div>
 
           <button>Sign up</button>
@@ -2793,21 +2793,12 @@
           <p>Last name: <span id="last_name_output"></span></p>
           <p>Email: <span id="email_output"></span></p>
           <p>Password: <span id="password_output"></span></p>
-          <p>Message: <span id="message-error"></span></p>
-          <p>Your Emergency: <span id="lang_output"></span></p>
-          <p>
-            Are you in a wrong parallel universe?:
-            <span id="lang_output"></span>
-          </p>
-          <p>
-            Phone number or Universal cell number:
-            <span id="lang_output"></span>
-          </p>
-          <p>Portal travel number: <span id="lang_output"></span></p>
-          <p>
-            To get back home do you prefer to travel with?:
-            <span id="lang_output"></span>
-          </p>
+          <p>Message: <span id="message_output"></span></p>
+          <p>Your Emergency: <span id="emergency_output"></span></p>
+          <p>1st Answer:<span id="phone_output"></span></p>
+          <p>2nd Answer:<span id="portal_world_Output"></span></p>
+          <p>3rd Answer: <span id="third_output"></span></p>
+          <p>4th Answer:<span id="fourth_output"></span></p>
           <p>Terms accepted: <span id="terms_output"></span></p>
         </div>
       </section>
