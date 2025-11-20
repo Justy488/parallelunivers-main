@@ -118,6 +118,7 @@ html {
 h1,
 h2 {
   line-height: 1.25;
+  margin: 2em;
 }
 
 h1 {
