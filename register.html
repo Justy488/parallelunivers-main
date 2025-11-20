@@ -2574,219 +2574,223 @@
           <p class="placeholder"></p>
         </article>
       </section>
-      <section class="formbox">
-        <h2>Formular</h2>
-        <form aria-label="EK signup form">
-          <div class="form-group">
-            <label for="first_name">First name</label>
-            <input
-              type="text"
-              id="first_name"
-              name="first_name"
-              aria-describedby="fname-error"
-              required
-            />
-            <p class="error-message" id="fname-error">Please enter a value</p>
-          </div>
+      <div class="formbox_02">
+        <section class="formbox">
+          <h2>Formular</h2>
+          <form aria-label="EK signup form">
+            <div class="form-group">
+              <label for="first_name">First name</label>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                aria-describedby="fname-error"
+                required
+              />
+              <p class="error-message" id="fname-error">Please enter a value</p>
+            </div>
 
-          <div class="form-group">
-            <label for="last_name">Last name</label>
-            <input
-              type="text"
-              id="last_name"
-              name="last_name"
-              aria-describedby="lname-error"
-              required
-            />
-            <p class="error-message" id="lname-error">Please enter a value</p>
-          </div>
+            <div class="form-group">
+              <label for="last_name">Last name</label>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                aria-describedby="lname-error"
+                required
+              />
+              <p class="error-message" id="lname-error">Please enter a value</p>
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              aria-describedby="email-error"
-              required
-            />
-            <p class="error-message" id="email-error">Please enter a value</p>
-          </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                aria-describedby="email-error"
+                required
+              />
+              <p class="error-message" id="email-error">Please enter a value</p>
+            </div>
 
-          <div class="form-group">
-            <label for="password">Password</label>
-            <p id="password-instruction">
-              Password must be at least 8 characters
-            </p>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              aria-describedby="password-instruction password-error"
-              required
-            />
-            <p class="error-message" id="password-error">
-              Please enter a value
-            </p>
-          </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <p id="password-instruction">
+                Password must be at least 8 characters
+              </p>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                aria-describedby="password-instruction password-error"
+                required
+              />
+              <p class="error-message" id="password-error">
+                Please enter a value
+              </p>
+            </div>
 
-          <div class="form-group">
-            <h3>Information on Your Emergency</h3>
+            <div class="form-group">
+              <h3>Information on Your Emergency</h3>
 
-            <!-- SKRIV MERE HER -->
-            <label for="b">Message</label>
-            <textarea name="message" id="meassage"></textarea>
+              <!-- SKRIV MERE HER -->
+              <label for="b">Message</label>
+              <textarea name="message" id="meassage"></textarea>
 
-            <!-- SKRIV MERE HER -->
-            <label for="a">Input Document</label>
+              <!-- SKRIV MERE HER -->
+              <label for="a">Input Document</label>
 
-            <input type="file" accept="image/*, text/*" name="file" />
+              <input type="file" accept="image/*, text/*" name="file" />
 
-            <label for="id-emergency">Nødsituation</label>
-            <select id="id-emergency" name="id-emergency" required>
-              <option value="">Vælg en Nødsituation</option>
-              <option value="valuta">💵 Mangel på Valuta</option>
-              <option value="dobbeltgænger">
-                🤝 Har mødt min Dobbeltgænger
-              </option>
-              <option value="dobbeltgænger-farlig">
-                🔪 Min dobbeltgænger prøver at dræbe mig!
-              </option>
-              <option value="erstatning">
-                👯 Min dobbeltgænger vil erstatte mig i mit univers
-              </option>
-              <option value="transport">
-                🚂 Kan ikke tage normal transport
-              </option>
-              <option value="aliens-normal">
-                👽 Aliens er normalt i dette univers!
-              </option>
-              <option value="nyt-hjem">
-                🏨 Kan ikke finde et hotel at bo på!
-              </option>
-              <option value="aliens-uber">
-                👽 Min UFO-Uberdriver er en Alien, det gør mig utilpas!
-              </option>
-              <option value="ufo-ny">
-                🛸 Jeg har aldrig kørt med UFO før!
-              </option>
-              <option value="portal-syg">🤧 Jeg bliver nemt portal-syg</option>
-            </select>
-            <!-- SKRIV MERE HER -->
-            <label for="c">More</label>
-            <textarea name="more" id="c"></textarea>
+              <label for="id-emergency">Nødsituation</label>
+              <select id="id-emergency" name="id-emergency" required>
+                <option value="">Vælg en Nødsituation</option>
+                <option value="valuta">💵 Mangel på Valuta</option>
+                <option value="dobbeltgænger">
+                  🤝 Har mødt min Dobbeltgænger
+                </option>
+                <option value="dobbeltgænger-farlig">
+                  🔪 Min dobbeltgænger prøver at dræbe mig!
+                </option>
+                <option value="erstatning">
+                  👯 Min dobbeltgænger vil erstatte mig i mit univers
+                </option>
+                <option value="transport">
+                  🚂 Kan ikke tage normal transport
+                </option>
+                <option value="aliens-normal">
+                  👽 Aliens er normalt i dette univers!
+                </option>
+                <option value="nyt-hjem">
+                  🏨 Kan ikke finde et hotel at bo på!
+                </option>
+                <option value="aliens-uber">
+                  👽 Min UFO-Uberdriver er en Alien, det gør mig utilpas!
+                </option>
+                <option value="ufo-ny">
+                  🛸 Jeg har aldrig kørt med UFO før!
+                </option>
+                <option value="portal-syg">
+                  🤧 Jeg bliver nemt portal-syg
+                </option>
+              </select>
+              <!-- SKRIV MERE HER -->
+              <label for="c">More</label>
+              <textarea name="more" id="c"></textarea>
+
+              <fieldset>
+                <legend>Are you in a wrong parallel universe?</legend>
+
+                <label for="yes">
+                  <input
+                    type="radio"
+                    id="yes"
+                    name="areyou"
+                    value="Yes"
+                    aria-describedby="areyou-error"
+                    required
+                  />
+                  Yes
+                </label>
+
+                <label for="no">
+                  <input type="radio" id="no" name="areyou" value="No" />
+                  No
+                </label>
+
+                <label for="maybe">
+                  <input type="radio" id="maybe" name="areyou" value="Maybe" />
+                  Maybe
+                </label>
+
+                <label for="idk">
+                  <input
+                    type="radio"
+                    id="idk"
+                    name="areyou"
+                    value="I don't know"
+                  />
+                  I don't know
+                </label>
+              </fieldset>
+              <p id="areyou-error" class="error-message">
+                Please select an option
+              </p>
+            </div>
+
+            <label for="first">Phone number or Universal cell number:</label>
+            <div>
+              <select name="country_code">
+                <option value="+45">🇩🇰 +45</option>
+                <option value="+47">🇳🇴 +47 Norge</option>
+                <option value="+46">🇸🇪 +46 Sverige</option>
+                <option value="+44">🇬🇧 +44 England</option>
+              </select>
+              <!-- space -->
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <label for="portal_world">Portal travel number:</label>
+            <div>
+              <input type="tel" id="portal_world" name="portal_world" />
+              <!-- space -->
+              <select name="country_code">
+                <option value="#045">🇬🇧 🪐#045</option>
+                <option value="#60">🇬🇧 🪐#606</option>
+                <option value="#365">🇬🇧🪐#365</option>
+                <option value="#808">🇬🇧 🪐#808</option>
+              </select>
+            </div>
 
             <fieldset>
-              <legend>Are you in a wrong parallel universe?</legend>
+              <legend>To get back home do you prefer to travel with?</legend>
 
-              <label for="yes">
+              <label>
                 <input
                   type="radio"
-                  id="yes"
-                  name="areyou"
-                  value="Yes"
-                  aria-describedby="areyou-error"
+                  value="stay"
+                  name="language"
+                  aria-describedby="language-error"
                   required
                 />
-                Yes
+                I would like to stay here!
               </label>
 
-              <label for="no">
-                <input type="radio" id="no" name="areyou" value="No" />
-                No
+              <label>
+                <input type="radio" value="portal" name="language" />
+                Portal jumping
               </label>
 
-              <label for="maybe">
-                <input type="radio" id="maybe" name="areyou" value="Maybe" />
-                Maybe
-              </label>
-
-              <label for="idk">
-                <input
-                  type="radio"
-                  id="idk"
-                  name="areyou"
-                  value="I don't know"
-                />
-                I don't know
+              <label>
+                <input type="radio" value="ufo" name="language" />
+                Unidentified Flying Object (UFO)
               </label>
             </fieldset>
-            <p id="areyou-error" class="error-message">
-              Please select an option
+
+            <p id="travel_method" class="error-message">
+              Please select a travel method
             </p>
-          </div>
 
-          <label for="first">Phone number or Universal cell number:</label>
-          <div>
-            <select name="country_code">
-              <option value="+45">🇩🇰 +45</option>
-              <option value="+47">🇳🇴 +47 Norge</option>
-              <option value="+46">🇸🇪 +46 Sverige</option>
-              <option value="+44">🇬🇧 +44 England</option>
-            </select>
-            <!-- space -->
-            <input type="tel" id="phone" name="phone" />
-          </div>
+            <div class="form-group">
+              <label for="accept_terms">
+                <input
+                  type="checkbox"
+                  id="accept_terms"
+                  name="accept_terms"
+                  value="yes"
+                  aria-describedby="terms-error"
+                  required
+                />
+                Accept terms
+              </label>
+              <p class="error-message" id="tick_box">Please tick the box</p>
+            </div>
 
-          <label for="portal_world">Portal travel number:</label>
-          <div>
-            <input type="tel" id="portal_world" name="portal_world" />
-            <!-- space -->
-            <select name="country_code">
-              <option value="#045">🇬🇧 🪐#045</option>
-              <option value="#60">🇬🇧 🪐#606</option>
-              <option value="#365">🇬🇧🪐#365</option>
-              <option value="#808">🇬🇧 🪐#808</option>
-            </select>
-          </div>
-
-          <fieldset>
-            <legend>To get back home do you prefer to travel with?</legend>
-
-            <label>
-              <input
-                type="radio"
-                value="stay"
-                name="language"
-                aria-describedby="language-error"
-                required
-              />
-              I would like to stay here!
-            </label>
-
-            <label>
-              <input type="radio" value="portal" name="language" />
-              Portal jumping
-            </label>
-
-            <label>
-              <input type="radio" value="ufo" name="language" />
-              Unidentified Flying Object (UFO)
-            </label>
-          </fieldset>
-
-          <p id="travel_method" class="error-message">
-            Please select a travel method
-          </p>
-
-          <div class="form-group">
-            <label for="accept_terms">
-              <input
-                type="checkbox"
-                id="accept_terms"
-                name="accept_terms"
-                value="yes"
-                aria-describedby="terms-error"
-                required
-              />
-              Accept terms
-            </label>
-            <p class="error-message" id="tick_box">Please tick the box</p>
-          </div>
-
-          <button>Sign up</button>
-        </form>
-      </section>
+            <button>Sign up</button>
+          </form>
+        </section>
+      </div>
 
       <section class="output">
         <div class="output">

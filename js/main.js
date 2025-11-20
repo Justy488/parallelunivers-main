@@ -32,9 +32,9 @@ function updateInfoboxufo() {
   document.querySelector(".info-text h2").textContent = "UFO";
   document.querySelector(".info-text .placeholder").textContent = "";
   document.querySelector("#efficiency").innerHTML =
-    "<h3>Underrubrik</h3><p>lorem</p>";
+    "<h3>Man ved aldrig</h3><p>I dette univers, som du er endt i kunne du få hjælp fra. </p>";
   document.querySelector("#requirement").innerHTML =
-    "<h3>Underrubrik</h3><p></p>";
+    "<h3>Hjælp fra en UFO-driver</h3><p>Hvis man en dag vågner op og opdager, at man er havnet i det forkerte univers – hvor stjernerne blinker i mærkelige farver, og folk hilser på én med tentakler – så er der heldigvis håb. For nogle gange dukker der en venlig UFO op, stille som et suk i natten, og tilbyder et lift tilbage til det rigtige sted. Så selv når alting føles fremmed, kan hjemrejsen være tættere på, end man tror.</p>";
   document.querySelector("#ufo").classList.add("highlight");
 }
 
@@ -59,9 +59,11 @@ function updateInfoboxhotel() {
   document.querySelector(".info-text .placeholder").textContent =
     "Du har teknisk set ikke noget sted, at bo da dette ikke er dit univers, men bare rolig...";
   document.querySelector("#efficiency").innerHTML =
-    "<h3>Hvor kan du bo henne?</h3><p>Hvis du nu er endt i et parallelt univers, hvor kunne du så bo henne?</p>";
+    "<h3>Dette Kunne være dine muligheder, som vi fortrækker: </h3> <strong><h3>Du kunne vælge:  </h3></strong><p> - AirBNB </p> <p> - Et familie medlem som ikke er en seriemorder i dette univers.</p> <p> - Eller det mest oplagte et Hotel</p>";
+
   document.querySelector("#requirement").innerHTML =
-    "<h3>Dette Kunne være dine muligheder, men vi fortrækker at sætte dig i et hotel </h3> <strong><h3>Du kunne vælge:  </h3></strong><p> - AirBNB </p> <p> - Et familie medlem som ikke er en seriemorder i dette univers.</p> <p> - Eller det mest oplagte et Hotel</p>";
+    "<h3>Hvor kan du bo henne?</h3><p>Hvis man pludselig befinder sig på et hotel mellem universerne – et sted hvor receptionisten kan se både fortid og fremtid, og værelserne skifter form efter ens humør – så behøver man heldigvis ikke bekymre sig om regningen med det samme. Her betaler man nemlig først, når man er vendt tilbage til sit eget univers… eller når man endelig har penge nok til at klare det hele med Klarna. Indtil da kan man bare nyde udsigten til de parallelle verdener og tage en ekstra kosmisk morgenbuffet uden dårlig samvittighed.</p>";
+
   document.querySelector("#hotel").classList.add("highlight");
 }
 
@@ -230,11 +232,11 @@ function updateInfoboxplane() {
   document.querySelector(".info-text h2").textContent =
     "Du har trykket på pilen";
   document.querySelector(".info-text .placeholder").textContent =
-    " Følg linket til formularen";
+    " Følg knappen 'Indberet' til formularen";
   document.querySelector("#efficiency").innerHTML =
-    "<h3> Info om Situationen </h3><p> Ved at klikke på dette link kan du blive sendt videre formularen, som hjælper os med at finde den rigtige løsning for dig i din Nødsituation. </p> <strong><p> Tryk her for at få mere at vide </p></strong>";
+    "<h3> Info om Situationen </h3><p> Ved at klikke på knappen kan du blive sendt videre til formularen, som hjælper os med at finde den rigtige løsning for dig i din Nødsituation. </p> <strong><p> Tryk her for at få mere at vide </p></strong>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p> </p><p>  </p>";
+    "<h3> Muligheder </h3><p> Der er en masse nødsituationer du kan vælgeimellem</p><p>  </p>";
   document.querySelector("#plane").classList.add("highlight");
 }
 

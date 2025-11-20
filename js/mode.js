@@ -1,5 +1,6 @@
 // Tilføj din JavaScript her
-const root = document.querySelector("html");
+// Tilføj din JavaScript her
+const root = document.querySelector(":root"); // Nu med querySelector
 const toggle = document.querySelector(".toggle input");
 
 function toggleDarkMode() {

@@ -128,5 +128,14 @@ button:active {
 }
 
 .formbox {
-  background-color: #ffff;
+  background-color: var(--formbox-bg);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--color-text); /* så teksten også følger temaet */
+}
+
+.formbox_02 {
+  background-color: var(--formbox02-bg);
+  padding: 20px;
+  border-radius: 10px;
 }

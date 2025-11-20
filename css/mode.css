@@ -1,101 +1,42 @@
 /* Light mode er standard via :root */
 :root {
-  --color-bg: #7ea1c4;
-  --color-head-bg: #304ac0;
-  --color-logotype-bg: #050404;
-  --color-text-logotype: #fdfcf8;
+  color-scheme: light;
+  --color-bg: light-dark(#7ea1c4, #1a1918);
+  --color-head-bg: light-dark(#304ac0, #4a30c0);
+  --color-logotype-bg: light-dark(#050404, #050404);
+  --color-text-logotype: light-dark(#fdfcf8, #fdfcf8);
 
-  --color-menu-bg: #db592a;
-  --color-link-bg: #f9f9f9;
-  --color-link-hover: #6f90eb;
-  --color-link-active: #c0d2f6;
+  --color-menu-bg: light-dark(#db592a, #921e43);
+  --color-link-bg: light-dark(#f9f9f9, #4a30c0);
+  --color-link-hover: light-dark(#6f90eb, #4a30c0);
+  --color-link-active: light-dark(#c0d2f6, #4a30c0);
 
-  --color-headline-bg: #db592a;
-  --color-headline-text-page: #ffffff;
+  --color-headline-bg: light-dark(#db592a, #921e43);
+  --color-headline-text-page: light-dark(#ffffff, #ffffff);
 
-  --color-text: #000;
-  --innerbox-bg: #c4c4c4;
+  --color-text: light-dark(#000, #ffffff);
+  --innerbox-bg: light-dark(#c4c4c4, #353434);
 
-  --color-text-inverted: #ffffff;
+  --color-text-inverted: light-dark(#ffffff, #ffffff);
 
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #7298e9;
+  --color-card-bg: light-dark(#ffffff, #353434);
+  --color-cta-card-bg: light-dark(#7298e9, #353434);
 
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #ffffff;
-  --color-cta-newscard-bg: #7298e9;
-  --color-cta-newscard-bg-inverted: #7298e9;
+  --color-news-bg: light-dark(#dbdad4, #8a8989);
+  --color-news-bg-inverted: light-dark(#ffffff, #8a8989);
+  --color-cta-newscard-bg: light-dark(#7298e9, #7298e9);
+  --color-cta-newscard-bg-inverted: light-dark(#7298e9, #7298e9);
 
-  --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #6f90eb;
-  --color-infobox-2-bg: #dbe2f5;
+  --color-info-bg: light-dark(#ffffff, #8a8989);
+  --color-infobox-1-bg: light-dark(#6f90eb, #4a30c0);
+  --color-infobox-2-bg: light-dark(#dbe2f5, #866df9);
+
+  --formbox-bg: light-dark(#ffffff, #304ac0); /* indre kasse */
+  --formbox02-bg: light-dark(#304ac0, #ffffff); /* ydre ramme */
 }
 
-/* Dark mode variabler */
-html.dark {
-  --color-bg: #1a1918;
-  --color-head-bg: #4a30c0;
-  --color-logotype-bg: #050404;
-  --color-text-logotype: #fdfcf8;
-
-  --color-menu-bg: #921e43;
-  --color-link-bg: #4a30c0;
-  --color-link-hover: #000000;
-  --color-link-active: #c0d2f6;
-
-  --color-headline-bg: #921e43;
-  --color-headline-text-page: #ffffff;
-
-  --color-text: #ffffff;
-  --innerbox-bg: #353434;
-  --color-text-inverted: #ffffff;
-
-  --color-card-bg: #8a8989;
-  --color-cta-card-bg: #7298e9;
-
-  --color-news-bg: #8a8989;
-  --color-news-bg-inverted: #4a30c0;
-  --color-cta-newscard-bg: #7298e9;
-  --color-cta-newscard-bg-inverted: #7298e9;
-
-  --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #6f90eb;
-  --color-infobox-2-bg: #dbe2f5;
-
-  /*          first draft of darkmode */
-
-  /* 
-  --color-bg: #121212;
-  --color-head-bg: #1f1f1f;
-  --color-logotype-bg: #000000;
-  --color-text-logotype: #ffffff;
-
-  --color-menu-bg: #2c2c2c;
-  --color-link-bg: #1f1f1f; */
-
-  /* --color-link-hover: #ffffff; */
-  /* --color-link-active: #7298e9;
-
-  --color-headline-bg: #1f1f1f;
-  --color-headline-text-page: #ffffff;
-
-  --color-text: #e0e0e0;
-  --color-text02: #000000; */
-
-  /* --color-text-inverted: #000000; */
-
-  /* --color-card-bg: #1e1e1e;
-  --color-cta-card-bg: #3a63c1;
-
-  --color-news-bg: #2c2c2c;
-  --color-news-bg-inverted: #1e1e1e;
-  --color-cta-newscard-bg: #3a63c1;
-  --color-cta-newscard-bg-inverted: #3a63c1; */
-
-  /* Infographics */
-  /* --color-info-bg: #1a1a1a;
-  --color-infobox-1-bg: #4a5fae;
-  --color-infobox-2-bg: #2c2c2c; */
+:root.dark {
+  color-scheme: dark;
 }
 
 /* Anvend variabler */
