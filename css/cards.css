@@ -47,6 +47,11 @@
 }
 .news_card h3 {
   margin: 0.5rem 0 0 0;
+
+  margin: 40px 0 20px 0;
+  padding: 15px 30px;
+  background-color: var(--color-headline-bg);
+  font-size: var(--font-h2-size);
 }
 .news_card p {
   margin: 0 0 1rem 0;
@@ -72,13 +77,13 @@
   justify-self: center;
 }
 .cta_btn {
-  display: inline-block;
+  /* display: inline-block;
   padding: 0.4rem 1rem;
   background-color: var(--color-cta-card-bg);
   color: var(--color-text-inverted);
   text-decoration: none;
   width: max-content;
-  border-radius: 2em;
+  border-radius: 2em; */
   /* border-radius: var(--border-radius); */
 }
 .news_card .cta_btn {
@@ -86,9 +91,89 @@
 }
 .news_card:nth-of-type(2n) .cta_btn {
   background-color: var(--color-cta-newscard-bg-inverted);
-  color: var(--color-text);
+  /* color: var(--color-text); denne er udkommenteret, så den ikke gælder alle elementer for nu */
+  color: aliceblue;
 }
 .cta_btn:after {
   content: "\2192";
   margin-left: 1rem;
+}
+
+/* Accordion - hover effekt */
+
+html {
+  interpolate-size: allow-keywords;
+}
+
+.detail_card {
+  /* background: gainsboro; */
+  --innerinfo-bg: #ffffff;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 1em;
+}
+
+.detail_card p {
+  transition: 0.3s;
+  height: 0;
+  overflow: clip;
+}
+
+.detail_card:hover p {
+  height: 200px;
+  height: auto;
+}
+
+/* Accordion */
+
+html {
+  interpolate-size: allow-keywords;
+}
+
+.faq-section {
+  display: grid;
+  grid-template-columns: min(100%, 65ch);
+  place-content: center;
+  gap: 2px;
+}
+
+summary {
+  background: #b0adad;
+
+  cursor: pointer;
+  padding: 1em;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 1em;
+}
+
+::marker {
+  content: none;
+}
+summary::after {
+  content: "+";
+  font-family: system-ui;
+  font-weight: 400;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+[open] summary::after {
+  content: "–";
+}
+
+::details-content {
+  height: 0;
+  overflow: clip;
+  transition: 0.3s allow-discrete;
+  height: auto;
+}
+
+details[open]::details-content {
+  height: auto;
 }

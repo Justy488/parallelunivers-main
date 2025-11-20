@@ -9,13 +9,13 @@ header {
 }
 
 #main-disclamer {
-  height: 225px;
   background-color: var(--color-head-bg);
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-left: 2rem;
   padding-bottom: 2%;
+  padding-top: 5%;
   margin-bottom: var(--margin-head-bottom);
 }
 
@@ -27,7 +27,7 @@ header {
 }
 
 main section {
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: var(--border-radius);
 }
 
@@ -121,11 +121,6 @@ header nav li a {
   /* border-radius: var(--border-radius-links); */
 }
 
-/* Pilen efter menu-tekst */
-header > nav li > a:after {
-  content: " \2192";
-}
-
 /* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
   background-color: var(--color-link-hover);
@@ -155,12 +150,19 @@ input {
 }
 
 button {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #000;
   color: #fff;
   border-radius: 6px;
   padding: 0.25rlh 0.5rlh;
   cursor: pointer;
+  margin: 1em;
+}
+
+.pop_knap {
+  color: rgb(255, 255, 255);
+  background-color: rgb(19, 131, 127);
+  margin: 1em;
 }
 
 /* color on buttons - instruktion page */
@@ -170,12 +172,11 @@ button {
 }
 .info-knap {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1em;
+  grid-template-columns: repeat(2, 2fr);
 }
 
 button.ufo {
-  background-color: rgba(48, 216, 160, 0.763);
+  background-color: rgba(14, 72, 53, 0.763);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -195,7 +196,7 @@ button.bluegirl {
 }
 
 button.yellowgirl {
-  background-color: rgb(255, 210, 119);
+  background-color: rgb(190, 184, 127);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -210,7 +211,7 @@ button.plane {
 }
 
 button.train {
-  background-color: rgb(255, 210, 119);
+  background-color: rgb(78, 65, 39);
   grid-template-columns: 1fr 1fr;
 }
 
@@ -305,7 +306,8 @@ section {
 }
 
 .output div {
-  background: #f5f5f5;
+  background-color: var(--formbox-bg);
+
   padding: 1rlh;
   border-radius: 6px;
   display: grid;

@@ -1,0 +1,143 @@
+/* Light mode er standard via :root */
+:root {
+  color-scheme: light;
+  --color-bg: light-dark(#7ea1c4, #1a1918);
+  --color-head-bg: light-dark(#304ac0, #4a30c0);
+  --color-logotype-bg: light-dark(#050404, #050404);
+  --color-text-logotype: light-dark(#fdfcf8, #fdfcf8);
+
+  --color-menu-bg: light-dark(#db592a, #921e43);
+  --color-link-bg: light-dark(#f9f9f9, #4a30c0);
+  --color-link-hover: light-dark(#6f90eb, #4a30c0);
+  --color-link-active: light-dark(#c0d2f6, #4a30c0);
+
+  --color-headline-bg: light-dark(#db592a, #921e43);
+  --color-headline-text-page: light-dark(#ffffff, #ffffff);
+
+  --color-text: light-dark(#000, #ffffff);
+  --innerbox-bg: light-dark(#c4c4c4, #353434);
+
+  --color-text-inverted: light-dark(#ffffff, #ffffff);
+
+  --color-card-bg: light-dark(#ffffff, #353434);
+  --color-cta-card-bg: light-dark(#7298e9, #353434);
+
+  --color-news-bg: light-dark(#dbdad4, #8a8989);
+  --color-news-bg-inverted: light-dark(#ffffff, #8a8989);
+  --color-cta-newscard-bg: light-dark(#7298e9, #7298e9);
+  --color-cta-newscard-bg-inverted: light-dark(#7298e9, #7298e9);
+
+  --color-info-bg: light-dark(#ffffff, #8a8989);
+  --color-infobox-1-bg: light-dark(#6f90eb, #4a30c0);
+  --color-infobox-2-bg: light-dark(#dbe2f5, #866df9);
+
+  --formbox-bg: light-dark(#ffffff, #304ac0); /* indre kasse */
+  --formbox02-bg: light-dark(#304ac0, #ffffff); /* ydre ramme */
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+/* Anvend variabler */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+header {
+  background-color: var(--color-head-bg);
+}
+
+/* .logo {
+  background-color: var(--color-logotype-bg);
+  color: var(--color-text-logotype);
+} */
+
+.menu {
+  background-color: var(--color-menu-bg);
+}
+
+/* a {
+  background-color: var(--color-link-bg);
+  color: var(--color-text);
+} */
+/* 
+a:hover {
+  color: var(--color-link-hover);
+} */
+
+.card {
+  background-color: var(--color-card-bg);
+  color: var(--color-text);
+}
+
+.news-card {
+  background-color: var(--color-news-bg);
+  color: var(--color-text);
+}
+
+/* osv. – alle steder hvor du bruger farver */
+
+/* The switch - the box around the slider, den må ikke hedde switch da det allerede er et variabelnavn */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1c449a;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(234, 183, 45);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

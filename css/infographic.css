@@ -50,10 +50,10 @@
 /* ========== SVG interaktion og effekter ========== */
 
 /* Fælles overgang og klikbar styling */
-.clickable {
+/* .clickable {
   transition: all 0.3s ease;
   cursor: pointer;
-}
+} */
 
 #ufo,
 #hotel {
