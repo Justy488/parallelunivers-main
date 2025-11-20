@@ -121,11 +121,6 @@ header nav li a {
   /* border-radius: var(--border-radius-links); */
 }
 
-/* Pilen efter menu-tekst */
-header > nav li > a:after {
-  content: " \2192";
-}
-
 /* Global menu hover effekt - Lav den om til det, du synes */
 nav a:hover {
   background-color: var(--color-link-hover);
@@ -177,7 +172,7 @@ button {
 }
 .info-knap {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(2, 2fr);
 }
 
 button.ufo {
