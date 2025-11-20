@@ -85,11 +85,11 @@ function updateInfoboxpink() {
 
   document.querySelector(".info-text h2").textContent = "Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
-    "Oh Nej! Du har mødt eller set din dobbeltgænger, hvad gør du?";
+    "Oh Nej! Du har mødt eller set din dobbeltgænger";
   document.querySelector("#efficiency").innerHTML =
-    "<h3> Info om Situationen </h3><p>Du har mødt din dobbeltgænger i et parallelt univers...</p><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
+    "<h3> Info om Situationen </h3><p>Du har mødt din dobbeltgænger i et parallelt univers...</p><h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
+    "<p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
 
   ("<h3>Muligheder</h3><p>Overvej dine valg. Nysgerrighed kan være farlig...</p>");
   document.querySelector("#pinkgirl").classList.add("highlight");
@@ -114,11 +114,13 @@ function updateInfoboxblue() {
 
   document.querySelector(".info-text h2").textContent = "#2 Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
-    "Plan blue - den blå mulighed";
+    "Oh Nej! Du har mødt eller set din dobbeltgænger";
   document.querySelector("#efficiency").innerHTML =
-    "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
+    "<h3> Info om Situationen </h3><p>Du har mødt din dobbeltgænger i et parallelt univers...</p><h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder<p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p> <p>Klik på en anden pige for at se flere scenarier...</p>";
+    "<p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
+
+  ("<h3>Muligheder</h3><p>Overvej dine valg. Nysgerrighed kan være farlig...</p>");
   document.querySelector("#bluegirl").classList.add("highlight");
 }
 
@@ -141,11 +143,13 @@ function updateInfoboxyellow() {
   document.querySelector("#plane").classList.remove("highlight");
   document.querySelector(".info-text h2").textContent = "#3 Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
-    "Plan yellow - den gule mulighed";
+    "Oh Nej! Du har mødt eller set din dobbeltgænger";
   document.querySelector("#efficiency").innerHTML =
-    "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
+    "<h3> Info om Situationen </h3><p>Du har mødt din dobbeltgænger i et parallelt univers...</p><h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p>Ved klik på en anden pige kan du se andre muligheder...</p>";
+    "<p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
+
+  ("<h3>Muligheder</h3><p>Overvej dine valg. Nysgerrighed kan være farlig...</p>");
   document.querySelector("#yellowgirl").classList.add("highlight");
 }
 
@@ -169,11 +173,13 @@ function updateInfoboxgreen() {
 
   document.querySelector(".info-text h2").textContent = "#4 Din Dobbeltgænger";
   document.querySelector(".info-text .placeholder").textContent =
-    "Plan green - den grønne mulighed";
+    "Oh Nej! Du har mødt eller set din dobbeltgænger";
   document.querySelector("#efficiency").innerHTML =
-    "<h3> Info om Situationen </h3><p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong>";
+    "<h3> Info om Situationen </h3><p>Du har mødt din dobbeltgænger i et parallelt univers...</p><h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p>";
   document.querySelector("#requirement").innerHTML =
-    "<h3> Muligheder </h3><p> Dette Kunne være dine muligheder, ved klik af en anden pige kan du se andre muligheder...</p><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
+    "<p>Du har tilfældigtvis mødt din dobbeltgænger, da du blev teleporteret til et forkert parallel univers.</p> <strong><p> Hvad gør du? </p></strong><p> Det ikke så godt at du har set din dobbeltgænger for som man siger 'Nysggerighed dræbte katten' eller måske gjorde du? </p>";
+
+  ("<h3>Muligheder</h3><p>Overvej dine valg. Nysgerrighed kan være farlig...</p>");
   document.querySelector("#greengirl").classList.add("highlight");
 }
 
