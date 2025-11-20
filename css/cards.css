@@ -77,13 +77,13 @@
   justify-self: center;
 }
 .cta_btn {
-  display: inline-block;
+  /* display: inline-block;
   padding: 0.4rem 1rem;
   background-color: var(--color-cta-card-bg);
   color: var(--color-text-inverted);
   text-decoration: none;
   width: max-content;
-  border-radius: 2em;
+  border-radius: 2em; */
   /* border-radius: var(--border-radius); */
 }
 .news_card .cta_btn {
@@ -106,7 +106,8 @@ html {
 }
 
 .detail_card {
-  background: gainsboro;
+  /* background: gainsboro; */
+  --innerinfo-bg: #ffffff;
   padding: 1em;
   margin: 0.5em;
   border-radius: 1em;
@@ -137,7 +138,8 @@ html {
 }
 
 summary {
-  background: #eee;
+  background: #b0adad;
+
   cursor: pointer;
   padding: 1em;
   display: flex;
